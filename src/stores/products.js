@@ -10,16 +10,59 @@ export const useProductsStore = defineStore('products',  {
                 category: "Fruit",
                 price: 200,
                 availability: true,
-                image: 'tomato.jpg'
-            }
+                image: '/home1.jpg'
+            },
+            1:{
+                id: 1,
+                name: "Tomato",
+                category: "Fruit",
+                price: 200,
+                availability: true,
+                image: '/home1.jpg'
+            },
+            2:{
+                id: 1,
+                name: "Tomato",
+                category: "Fruit",
+                price: 200,
+                availability: true,
+                image: '/home1.jpg'
+            },
+            3:{
+                id: 1,
+                name: "Tomato",
+                category: "Fruit",
+                price: 200,
+                availability: true,
+                image: '/home1.jpg'
+            },
+            4:{
+                id: 1,
+                name: "Tomato",
+                category: "Fruit",
+                price: 200,
+                availability: true,
+                image: '/home1.jpg'
+            },
+            5:{
+                id: 1,
+                name: "Tomato",
+                category: "Fruit",
+                price: 200,
+                availability: true,
+                image: '/tomato.jpg'
+            },
         }
+        const selectedProduct = ref(null)
        
         return{
-            products
+            products, selectedProduct
         }
    },
    actions:{
-       
+       updateSelectedProduct (payload) {
+            this.selectedProduct = payload
+        },
    },
    persist: true,
 })
