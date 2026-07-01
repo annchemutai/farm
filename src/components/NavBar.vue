@@ -30,7 +30,7 @@ function logOut(){
                 <v-img src="/logo.png" width="12%" height="12%"></v-img>
             </router-link>
         </v-app-bar-title>
-        <v-btn to="/home">Home</v-btn>
+        <v-btn to="/">Home</v-btn>
         <v-btn to="/products">Products</v-btn>
         <v-btn to="/seller_view" v-if="role == 3">Seller</v-btn>
         <v-btn to="/admin" v-if="role == 1">Admin</v-btn>
